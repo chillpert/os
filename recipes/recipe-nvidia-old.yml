@@ -1,10 +1,10 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: os-nvidia-open
+name: os-nvidia-old
 description: This is my personal OS image.
 
-base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia-open
+base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
 image-version: stable
 
 modules:
@@ -38,7 +38,7 @@ modules:
           - org.telegram.desktop
           - org.signal.Signal
           - com.protonvpn.www
-          # - com.dec05eba.gpu_screen_recorder
+          #- com.dec05eba.gpu_screen_recorder
       - scope: user
 
   - type: os-release
