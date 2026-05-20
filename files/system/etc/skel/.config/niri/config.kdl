@@ -1,0 +1,4 @@
+// Spawn Noctalia Shell on login
+spawn-at-startup "qs" "-c" "noctalia-shell"
+
+// @note This script will be replaced through chezmoi but let's ensure at least that the shell starts

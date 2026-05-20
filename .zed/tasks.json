@@ -1,0 +1,37 @@
+[
+  {
+    "label": "Build image (Windows)",
+    "command": "wsl",
+    "args": [
+      "-d",
+      "archlinux",
+      "--cd",
+      "/mnt/c/Users/chillpert/Repos/os",
+      "--",
+      "bluebuild",
+      "build",
+      "./recipes/recipe.yml",
+    ],
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+  },
+  {
+    "label": "Build ISO (Windows)",
+    "command": "wsl",
+    "args": [
+      "-d",
+      "archlinux",
+      "--cd",
+      "/mnt/c/Users/chillpert/Repos/os",
+      "--",
+      "bluebuild",
+      "generate-iso",
+      "--iso-name",
+      "chillpert-os.iso",
+      "recipe",
+      "./recipes/recipe.yml",
+    ],
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+  },
+]
