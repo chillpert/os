@@ -4,8 +4,8 @@
 name: os
 description: This is my personal OS image.
 
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 42
+base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
+image-version: stable
 
 modules:
   - type: files
