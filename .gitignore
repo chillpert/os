@@ -4,3 +4,6 @@ cosign.private
 
 /.bluebuild-scripts_*
 .claude
+
+chillpert-os.iso
+chillpert-os.iso*
